@@ -149,6 +149,11 @@ h2 {
   color: var(--brown-800);
 }
 
+hr {
+  width: 100%;
+  border: 1px solid var(--stone-150);
+}
+
 /* 
 *****************
 STYLES TREE
