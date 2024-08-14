@@ -151,7 +151,7 @@ h2 {
 
 hr {
   width: 100%;
-  border: 1px solid var(--stone-150);
+  border: 0.5px solid var(--stone-150);
 }
 
 /* 
@@ -260,6 +260,7 @@ article {
         li {
           color: var(--stone-600);
           padding-left: 16px;
+          margin: 8px 0;
 
           span {
             font-weight: 700;
@@ -267,6 +268,52 @@ article {
           &::marker {
             color: var(--brown-800);
             font-weight: 800;
+          }
+        }
+      }
+    }
+
+    .nutrition {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+
+      p {
+        margin: 0;
+        color: var(--stone-600);
+      }
+
+      table {
+        font: var(--text-preset-4);
+        color: var(--stone-600);
+        border-collapse: collapse;
+        tr {
+          border-bottom: 1px solid var(--stone-150);
+          &:first-of-type {
+            td {
+              padding-top: 0;
+            }
+          }
+          &:last-of-type {
+            border-bottom: none;
+            td {
+              padding-bottom: 0;
+            }
+          }
+
+          td {
+            width: 50%;
+            padding: 8px 0;
+
+            &:first-of-type {
+              padding-left: 32px;
+            }
+
+            &:last-of-type {
+              font-weight: 700;
+              color: var(--brown-800);
+              padding-left: 16px;
+            }
           }
         }
       }
