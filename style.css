@@ -252,6 +252,25 @@ article {
         }
       }
     }
+
+    .instructions {
+      ol {
+        font: var(--text-preset-4);
+        padding-left: calc(32px - 16px + 8px);
+        li {
+          color: var(--stone-600);
+          padding-left: 16px;
+
+          span {
+            font-weight: 700;
+          }
+          &::marker {
+            color: var(--brown-800);
+            font-weight: 800;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -279,6 +298,12 @@ article {
 
       h1 {
         font: var(--text-preset-1);
+      }
+
+      .instructions {
+        ol {
+          padding-left: calc(40px - 16px + 8px);
+        }
       }
     }
   }
